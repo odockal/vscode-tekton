@@ -963,7 +963,7 @@
     "build:webview": "webpack-cli --mode production",
     "watch:webview": "webpack-cli -w --mode development",
     "generate:hub-client": "openapi-generator-cli generate -i https://raw.githubusercontent.com/tektoncd/hub/main/api/gen/http/openapi3.json -g typescript-axios -o src/tekton-hub-client --additional-properties=supportsES6=true",
-    "ui-test": "extest setup-and-run ./out/ui-test/all.js"
+    "ui-test": "extest setup-and-run ./out/ui-test/all.js -i -c 1.71.2"
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.3.5",
